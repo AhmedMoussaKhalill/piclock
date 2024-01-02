@@ -178,35 +178,32 @@ const HybridImageEncryption = () => {
         </div>
       ) : (
         <div className="mt-5">
-          <div className="flex gap-2">
+          <div className="flex">
             {/* Original Image */}
-            <div className="flex-1 flex flex-col items-center justify-center">
+            <div className="flex-1 mr-4">
               <Badge className="mb-3">Original</Badge>
-              <Card className=" max-w-[500px] max-h-[500px]">
+              <Card>
                 <CardContent>
-                  <div className="flex items-center justify-center">
-                    <img
-                      src={uploadedImage}
-                      // alt="Uploaded Image"
-                      className="max-w-full max-h-full"
-                    />
-                  </div>
+                  <img
+                    src={uploadedImage}
+                    alt="Uploaded Image"
+                    className="max-w-full"
+                  />
                 </CardContent>
               </Card>
             </div>
-
             {/* Encrypted Image */}
             {encryptedImage && (
               <div className="flex-1">
                 <Badge variant="success" className="mb-3 gap-1">
                   Encrypted <Lock className="w-2.5 h-2.5 mb-1" />
                 </Badge>
-                <Card className=" max-w-[500px] max-h-[500px]">
-                  <CardContent className="flex items-center justify-center">
+                <Card>
+                  <CardContent>
                     <img
                       src={encryptedImage}
-                      // alt="Encrypted Image"
-                      className="max-w-full max-h-full"
+                      alt="Encrypted Image"
+                      className="max-w-full"
                     />
                   </CardContent>
                 </Card>
@@ -218,12 +215,12 @@ const HybridImageEncryption = () => {
                 <Badge variant="success" className="mb-3 gap-1">
                   Decrypted <Unlock className="w-2.5 h-2.5 mb-1" />
                 </Badge>
-                <Card className=" max-w-[500px] max-h-[500px]">
+                <Card>
                   <CardContent>
                     <img
                       src={decryptedImage}
-                      // alt="Decrypted Image"
-                      className="max-w-full max-h-full"
+                      alt="Decrypted Image"
+                      className="max-w-full"
                     />
                   </CardContent>
                 </Card>
@@ -286,7 +283,7 @@ const HybridImageEncryption = () => {
                 size="lg"
                 className="ml-2 rounded-lg"
               >
-                Upload Another File
+                Upload Another File{" "}
                 <UploadCloud className="w-4 h-4 ml-2 mb-1" />
               </Button>
             )}
