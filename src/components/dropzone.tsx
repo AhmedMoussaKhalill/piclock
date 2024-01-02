@@ -183,7 +183,7 @@ const HybridImageEncryption = () => {
             <div className="flex-1 mr-4">
               <Badge className="mb-3">Original</Badge>
               <Card>
-                <CardContent>
+                <CardContent className="flex justify-center">
                   <img
                     src={uploadedImage}
                     alt="Uploaded Image"
@@ -199,7 +199,7 @@ const HybridImageEncryption = () => {
                   Encrypted <Lock className="w-2.5 h-2.5 mb-1" />
                 </Badge>
                 <Card>
-                  <CardContent>
+                  <CardContent className="flex justify-center">
                     <img
                       src={encryptedImage}
                       alt="Encrypted Image"
@@ -216,7 +216,7 @@ const HybridImageEncryption = () => {
                   Decrypted <Unlock className="w-2.5 h-2.5 mb-1" />
                 </Badge>
                 <Card>
-                  <CardContent>
+                  <CardContent className="flex justify-center">
                     <img
                       src={decryptedImage}
                       alt="Decrypted Image"
