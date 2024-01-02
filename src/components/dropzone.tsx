@@ -213,17 +213,17 @@ const HybridImageEncryption = () => {
               </div>
             )}
             {/* Decrypted Image */}
-            {decryptedImage && (
+{decryptedImage && (
               <div className="flex-1">
                 <Badge variant="success" className="mb-3 gap-1">
                   Decrypted <Unlock className="w-2.5 h-2.5 mb-1" />
                 </Badge>
-                <Card>
+                <Card className=" max-w-[500px] max-h-[500px]">
                   <CardContent>
                     <img
                       src={decryptedImage}
                       // alt="Decrypted Image"
-                      className="max-w-full"
+                      className="max-w-full max-h-full"
                     />
                   </CardContent>
                 </Card>
